@@ -1,0 +1,75 @@
+1. Sample Data
+The first part shows a sample of five rows from the dataset. Each row represents a drug and contains columns such as:
+
+drug_name	medical_condition	drug_link	medical_condition_url
+doxycycline	Acne	Link	Link
+spironolactone	Acne	Link	Link
+minocycline	Acne	Link	Link
+Accutane	Acne	Link	Link
+clindamycin	Acne	Link	Link
+Observations:
+
+The dataset includes drug names and their corresponding medical conditions.
+Each drug has a URL link for further details.
+2. Missing Values in Each Column
+The next section shows the count of missing values for each column. Example:
+
+Column Name	Missing Values
+side_effects	124
+generic_name	43
+drug_classes	82
+brand_names	1213
+pregnancy_category	229
+alcohol	1554
+related_drugs	1469
+rating	1345
+no_of_reviews	1345
+Observations:
+
+Many missing values in the "rating" and "no_of_reviews" columns indicate that several drugs have no user feedback.
+Side effects and drug classes also have missing data, which could affect data analysis if not handled.
+3. Summary Statistics of Numeric Columns
+Metric	Rating (out of 10)	No. of Reviews
+Count	2931	2931
+Mean	3.69	40.62
+Std Dev	3.80	141.05
+Min	0.00	0.00
+25%	0.00	0.00
+Median	3.30	1.00
+75%	7.30	15.00
+Max	10.00	2934.00
+Observations:
+
+The average drug rating is 3.69 out of 10, with a wide range of ratings.
+Fifty percent of drugs have a rating of 3.3 or below, meaning many drugs have poor user feedback.
+Seventy-five percent of drugs have fewer than 15 reviews, but some popular drugs have over 2934 reviews.
+4. Count of Drugs per Medical Condition
+This part shows the number of drugs available for each condition. Example:
+
+Medical Condition	Drug Name	Count
+Acne	minocycline	2
+Eczema	fluocinolone	2
+Herpes	acyclovir	2
+ADHD	Adderall	1
+Adderall XR	1
+Adhansia XR	1
+Aptensio XR	1
+Observations:
+
+Some conditions have multiple drugs available (e.g., Acne and Herpes).
+ADHD has many drug variants, but each has a single entry in the dataset.
+5. Side Effects Analysis
+The last section lists common side effects reported for different drugs.
+
+Example of Side Effects:
+Side Effect Description	Count
+Unknown	124
+Severe allergic reactions (hives, swelling, difficulty breathing)	10
+Skin irritation (redness, burning, pain)	7
+Temporary hair loss	5
+High blood pressure, chest pain	5
+Observations:
+
+124 drugs have missing side effects information.
+The most common severe side effects include allergic reactions, skin irritation, and temporary hair loss.
+High blood pressure and chest pain are serious side effects that appear multiple times.
